@@ -1,0 +1,345 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:url("./image/394282.jpg") center center/cover no-repeat;
+}
+
+/* Dark overlay */
+
+.container{
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(0,0,0,.45);
+}
+
+/* ===========================
+   GLASS LOGIN CARD
+=========================== */
+
+.login-card{
+
+    width:340px;
+
+    padding:38px 30px;
+
+    background:rgba(20,20,20,.38);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.45);
+
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.login-card h1{
+
+    color:#fff;
+
+    text-align:center;
+
+    font-size:38px;
+
+    font-weight:600;
+
+    margin-bottom:32px;
+
+}
+
+/* ===========================
+   INPUT BOXES
+=========================== */
+
+.input-box{
+
+    width:100%;
+
+    height:48px;
+
+    display:flex;
+
+    align-items:center;
+
+    background:#ffffff;
+
+    margin-bottom:18px;
+
+}
+
+.icon{
+
+    width:48px;
+
+    text-align:center;
+
+    color:#333;
+
+    font-size:17px;
+
+}
+
+.input-box input{
+
+    flex:1;
+
+    height:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    color:#222;
+
+    font-size:15px;
+
+    padding-right:15px;
+
+}
+
+.input-box input::placeholder{
+
+    color:#8d8d8d;
+
+}
+
+/* Glow when selected */
+
+.input-box:focus-within{
+
+    box-shadow:0 0 10px rgba(58,154,255,.55);
+
+}
+
+/* ===========================
+   FORGOT PASSWORD
+=========================== */
+
+.forgot{
+
+    margin:5px 0 22px;
+
+}
+
+.forgot a{
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    font-weight:400;
+
+}
+
+.forgot a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ===========================
+   LOGIN BUTTON
+=========================== */
+
+.login-btn{
+
+    width:100%;
+
+    height:48px;
+
+    border:none;
+
+    background:#1d97ff;
+
+    color:#fff;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    background:#0c86f3;
+
+}
+
+.login-btn:active{
+
+    transform:scale(.98);
+
+}
+
+/* ===========================
+   DIVIDER
+=========================== */
+
+.divider{
+    text-align:center;
+    color:#ffffff;
+    font-size:16px;
+    font-weight:400;
+    margin:25px 0;
+}
+
+/* ===========================
+   SOCIAL BUTTONS
+=========================== */
+
+.social{
+    display:flex;
+    justify-content:space-between;
+    gap:12px;
+    margin-bottom:28px;
+}
+
+.social a{
+    flex:1;
+    height:45px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+    color:#ffffff;
+
+    font-size:15px;
+    font-weight:500;
+
+    transition:0.3s;
+}
+
+.social a i{
+    margin-right:8px;
+    font-size:16px;
+}
+
+/* Facebook */
+
+.facebook{
+    background:#3b5998;
+}
+
+.facebook:hover{
+    background:#324b81;
+}
+
+/* Instagram */
+
+.instagram{
+    background:#e1306c;
+}
+
+.instagram:hover{
+    background:#c82361;
+}
+
+/* ===========================
+   SIGN UP
+=========================== */
+
+.signup{
+    text-align:center;
+    color:#ffffff;
+    font-size:15px;
+    font-weight:400;
+}
+
+.signup a{
+    color:#2ea8ff;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.signup a:hover{
+    text-decoration:underline;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width:768px){
+
+    .login-card{
+        width:90%;
+        max-width:340px;
+        padding:35px 25px;
+    }
+
+    .login-card h1{
+        font-size:34px;
+    }
+
+    .social{
+        flex-direction:column;
+    }
+
+    .social a{
+        width:100%;
+    }
+}
+
+@media (max-width:480px){
+
+    .login-card{
+        width:92%;
+        padding:28px 20px;
+    }
+
+    .login-card h1{
+        font-size:30px;
+        margin-bottom:25px;
+    }
+
+    .input-box{
+        height:45px;
+    }
+
+    .login-btn{
+        height:45px;
+        font-size:18px;
+    }
+
+    .divider{
+        font-size:15px;
+    }
+
+    .signup{
+        font-size:14px;
+    }
+}
